@@ -21,9 +21,9 @@ Dont Miss Credits To 'Snow.#4004`);
 const { joinVoiceChannel } = require('@discordjs/voice');
 client.on('ready', () => {
 ///By IC丶SNOW 
-  client.user.setActivity("Streaming By Snow", { type: "STREAMING", url: "https://twitch.tv/NotNexusss" })
+  client.user.setActivity("Streaming By 18-81", { type: "STREAMING", url: "https://twitch.tv/NotNexusss" })
   setInterval(async () => {
-    client.channels.fetch("1049044375579152496")
+    client.channels.fetch(process.env.id)
       .then((channel) => {
         const VoiceConnection = joinVoiceChannel({
           channelId: channel.id,
