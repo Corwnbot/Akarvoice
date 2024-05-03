@@ -23,7 +23,7 @@ client.on('ready', () => {
 ///By IC丶SNOW 
   client.user.setActivity("Streaming By Snow", { type: "STREAMING", url: "https://twitch.tv/NotNexusss" })
   setInterval(async () => {
-    client.channels.fetch("id voice lera dabne")
+    client.channels.fetch("1049044375579152496")
       .then((channel) => {
         const VoiceConnection = joinVoiceChannel({
           channelId: channel.id,
